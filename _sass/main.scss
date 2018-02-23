@@ -9,17 +9,149 @@
 // 1. Import the initial variables
 @import "../node_modules/bulma/sass/utilities/initial-variables";
 
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:200,300,400|Open+Sans');
+// Material Design Icons
+$mdi-font-path: "../node_modules/mdi/fonts";
+@import "../node_modules/mdi/scss/materialdesignicons";
+
 // 2. Set your own initial variables
 // Update the blue shade, used for links
 $blue: #023281;
 // Update the sans-serif font family
-$family-sans-serif: "Roboto", "Arial", sans-serif;
+$family-sans-serif: "Roboto", "Open Sans", "Arial", sans-serif;
 
 // 3. Set the derived variables
 // Use the new pink as the primary color
 $primary: $blue;
+$body-weight: $weight-light;
 
 // 4. Import the rest of Bulma
 
 
 @import "../node_modules/bulma/bulma";
+
+.title, .subtitle {
+  font-weight: 200;
+}
+.has-large-text {
+  font-size: $size-3;
+}
+.input {
+  font-size: $size-4;
+}
+.button {
+  font-size: $size-4;
+}
+.button.is-rounded {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+// fix for navbar on mobile
+
+a.nav-item.is-primary {
+  color: $primary;
+}
+
+.navbar-item {
+  align-items: center;
+  display: flex;
+}
+
+.navbar,
+.navbar-menu,
+.navbar-start,
+.navbar-end {
+  align-items: stretch;
+  display: flex;
+  padding: 0;
+}
+
+.navbar-menu{
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.navbar-start{
+  justify-content: flex-start;
+  margin-right: auto;
+}
+.navbar-end{
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+
+// Footer
+
+.footer {
+  background-color: $grey-darker;
+  margin-top: 10rem;
+  color: $grey-lighter;
+  a {
+    color: inherit;
+  }
+}
+.level {
+  margin: 0 25%;
+}
+
+a:hover .icon,
+.level-item a:hover {
+  color: $grey-light !important;
+}
+a .icon {
+  color: $grey-lighter;
+}
+.icon.has-circle {
+  padding: 1.8rem;
+}
+#contact {
+  overflow: hidden;
+  text-align: center;
+  font-size: $size-3;
+  margin: 4rem 0;
+}
+#contact:before,
+#contact:after {
+  background-color: $grey-light;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+#contact:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+#contact:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+#legal {
+  margin: 5rem 0;
+}
+
+// Icons
+.icon.has-circle {
+  border: 1px solid;
+  border-radius: 50%;
+}
+
+.mdi-2x {
+  font-size: 2rem;
+}
+.mdi-3x {
+  font-size: 3rem;
+}
+.mdi-4x {
+  font-size: 4rem;
+}
+.mdi-5x {
+  font-size: 5rem;
+}
+.mdi-6x {
+  font-size: 6rem;
+}
