@@ -12,74 +12,20 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Roboto:200,300,400|Open+Sans');
 // Material Design Icons
-$mdi-font-path: "../node_modules/mdi/fonts";
+$mdi-font-path: "../static/fonts";
 @import "../node_modules/mdi/scss/materialdesignicons";
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,700');
 
-// 2. Set your own initial variables
-// Update the blue shade, used for links
-$blue: #023281;
-// Update the sans-serif font family
-$family-sans-serif: "Roboto", "Open Sans", "Arial", sans-serif;
 
-// 3. Set the derived variables
-// Use the new pink as the primary color
-$primary: $blue;
-$body-weight: $weight-light;
+// Imports
+@import "variables";
+@import "navbar";
+@import "buttons";
+@import "images";
+
 
 // 4. Import the rest of Bulma
-
-
 @import "../node_modules/bulma/bulma";
-
-.title, .subtitle {
-  font-weight: 200;
-}
-.has-large-text {
-  font-size: $size-3;
-}
-.input {
-  font-size: $size-4;
-}
-.button {
-  font-size: $size-4;
-}
-.button.is-rounded {
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-// fix for navbar on mobile
-
-a.nav-item.is-primary {
-  color: $primary;
-}
-
-.navbar-item {
-  align-items: center;
-  display: flex;
-}
-
-.navbar,
-.navbar-menu,
-.navbar-start,
-.navbar-end {
-  align-items: stretch;
-  display: flex;
-  padding: 0;
-}
-
-.navbar-menu{
-  flex-grow: 1;
-  flex-shrink: 0;
-}
-.navbar-start{
-  justify-content: flex-start;
-  margin-right: auto;
-}
-.navbar-end{
-  justify-content: flex-end;
-  margin-left: auto;
-}
 
 
 // Footer

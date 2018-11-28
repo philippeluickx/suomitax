@@ -1,0 +1,7 @@
+$button-padding-vertical: 1.25em;
+$button-padding-horizontal:	2.5em;
+
+.button.is-rounded {
+  padding-left: $button-padding-horizontal !important;
+  padding-right: $button-padding-horizontal !important;
+}
