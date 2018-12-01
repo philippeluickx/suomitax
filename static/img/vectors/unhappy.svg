@@ -13,9 +13,9 @@
    id="Layer_1"
    x="0px"
    y="0px"
-   width="160"
-   height="240"
-   viewBox="0 0 160 240"
+   width="480"
+   height="640"
+   viewBox="0 0 480 640"
    enable-background="new 0 0 1400 980"
    xml:space="preserve"
    sodipodi:docname="unhappy.svg"
@@ -40,9 +40,9 @@
    fit-margin-left="0"
    fit-margin-right="0"
    fit-margin-bottom="0"
-   inkscape:zoom="1.9265306"
-   inkscape:cx="-21.889545"
-   inkscape:cy="96.399583"
+   inkscape:zoom="0.48163265"
+   inkscape:cx="-340.21065"
+   inkscape:cy="-154.41734"
    inkscape:window-x="51"
    inkscape:window-y="27"
    inkscape:window-maximized="1"
@@ -52,7 +52,7 @@
 
 <g
    id="g84"
-   transform="matrix(0.57646774,0,0,0.57646774,-574.7055,-25.719397)">
+   transform="matrix(1.6022382,0,0,1.6022382,-1579.6927,-85.013444)">
 	<g
    id="g74">
 		<path

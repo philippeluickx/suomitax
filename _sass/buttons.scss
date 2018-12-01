@@ -1,7 +1,13 @@
-$button-padding-vertical: 1.25em;
-$button-padding-horizontal:	2.5em;
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+@import "../node_modules/bulma/bulma";
 
-.button.is-rounded {
-  padding-left: $button-padding-horizontal !important;
-  padding-right: $button-padding-horizontal !important;
+$button-padding-vertical: 0.55em;
+
+.button {
+  height: auto !important;
+}
+
+.button.is-wide.is-rounded {
+  padding-left: 2.5rem !important;
+  padding-right: 2.5rem !important;
 }
